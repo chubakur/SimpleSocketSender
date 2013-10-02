@@ -20,12 +20,14 @@ private:
     QHBoxLayout* host_layout;
     QHBoxLayout* data_layout;
     QTcpSocket* socket;
+    QTextEdit* answer_widget;
 public:
     Window();
     ~Window();
 public slots:
     void bind_socket();
     void send_data();
+    void read_data();
 };
 
 #endif // WINDOW_H
